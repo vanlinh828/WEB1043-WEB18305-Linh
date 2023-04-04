@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="task-form" class="form">
+            <div class="form-main">
+                <center>
+                    <h1 style=" font-family: Verdana, Geneva, Tahoma, sans-serif;">TODO LIST</h1>
+                </center>
+                <label for="task-name" class="form-title">Tên Task: <span style="color: red;">*</span></label><br>
+                <input type="text" id="task-name" name="task-name" required minlength="5" class="form-input"><br><br>
+                <label for="task-description" class="form-title">Mô tả: <span style="color: red;">*</span></label><br>
+                <textarea id="task-description" name="task-description" cols="30" rows="6" required minlength="20" class="form-input"></textarea>
+                <p class="note">Kí hiệu (<span style="color: red">*</span>): nội dung không được bỏ trống</p>
+                <button type="submit" class="btn">Add</button>
+            </div>
+            <h2 class="list-title">Danh sách task:</h2>
+            <ul id="task-list" class="list-menu"></ul>
+        </form>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
