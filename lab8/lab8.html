@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #myplayer{
+        width: 900px;
+        height: 600px;
+        margin-left: 100px;
+        }
+        #control{
+            position: absolute;
+            left: 350px;
+            top:560px ;
+        }
+    </style>
+</head>
+<body class="vd">
+    <video id="myplayer">
+        <source src="yt1s.com - Già Cùng Nhau Là Được  TeA ft PC  Prod VoVanDuc   Official MV.mp4">
+    </video>
+    <div id="control">
+        <button onclick="playPause">Play/Pause</button>
+        <button onclick="StopVideo">Stop</button>
+        <button onclick="replayVideo">Replay</button>
+        <button onclick="increaseVolum">Volum+</button>
+        <button onclick="decreaseVolum">Volum-</button>
+        <button onclick="muteVolum">Mute/Unmute</button>
+    </div>
+</body>
+<script src="lab8.js"></script>
+</html>
